@@ -17,6 +17,7 @@ interpolation ... 補完
 
 ## コマンド
 ```sh
+tf -help hoge ... help
 tf init
 tf apply
 tf destroy
@@ -26,3 +27,7 @@ tf sate list ... stateファイルをみやすく見るコマンド
 tf plan --out=newplan ...　プランをファイルに保存、こうするとapplyがこのファイルをもとに実行される
 tf apply newplan ... 事前に作成したプランファイルを適用
 ```
+
+## Azureでterraform
+1. az loginする
+2. 
