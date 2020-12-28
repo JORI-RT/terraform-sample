@@ -26,7 +26,16 @@ tf show ... show current resouce state
 tf sate list ... stateファイルをみやすく見るコマンド
 tf plan --out=newplan ...　プランをファイルに保存、こうするとapplyがこのファイルをもとに実行される
 tf apply newplan ... 事前に作成したプランファイルを適用
+# seisitive な情報を書いた
+terraform apply -var 'admin_username=plankton' -var 'admin_password=Password1234!'
 ```
+## syntax
+'''sh
+# []はカンマ区切りで複数の値が入る
+ address_space       = ["10.0.0.0/16", "10.0.1.0/16"]
+
+
+'''
 
 ## Azureでterraform
 1. az loginする
