@@ -15,9 +15,14 @@ remote backend ... defact terraform cloud
 implicit ... 暗黙
 interpolation ... 補完
 
-
-## 工藤さんに聞きたいこと
-tf state でpull,pushがあるがその概念
-remote state backend? つかってる？つかってないのなぜ
-https://www.terraform.io/docs/backends/index.html
-[疑問箇所](https://learn.hashicorp.com/tutorials/terraform/azure-build?in=terraform/azure-get-started)
+## コマンド
+```sh
+tf init
+tf apply
+tf destroy
+tf plan
+tf show ... show current resouce state
+tf sate list ... stateファイルをみやすく見るコマンド
+tf plan --out=newplan ...　プランをファイルに保存、こうするとapplyがこのファイルをもとに実行される
+tf apply newplan ... 事前に作成したプランファイルを適用
+```
