@@ -39,4 +39,5 @@ terraform apply -var 'admin_username=plankton' -var 'admin_password=Password1234
 
 ## Azureでterraform
 1. az loginする
-2. 
+## Azure Storage Accountをterraformのbackendにする
+https://docs.microsoft.com/ja-jp/azure/developer/terraform/store-state-in-azure-storage
